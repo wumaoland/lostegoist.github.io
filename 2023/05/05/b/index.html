@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <meta charset="utf-8" />
+        <title> | LOEG&#39;s Small house</title>
+        <meta name="author" content="LoSTeGOisT" />
+        <meta name="description" content="LOEG的Pages也说不定" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/images/favicon.png" />
+        <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <div id="loading-circle">
+                        <h2>LOADING</h2>
+                        <p>正在加载，请憩息</p>
+                        <img src="/images/loading.gif" />
+                    </div>
+                </div>
+            </transition>
+            <nav id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <div id="desktop-menu">
+        <a class="title" href="/">
+            <span>LOEG&#39;S SMALL HOUSE</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LOEG&#39;S SMALL HOUSE</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </div>
+</nav>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+            <transition name="into">
+                <div id="main" v-show="!loading">
+                    <div class="article">
+    <div>
+        <h1></h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/5/5
+        </span>
+        
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="关于一些网址资料的分享"><a href="#关于一些网址资料的分享" class="headerlink" title="关于一些网址资料的分享"></a>关于一些网址资料的分享</h1><p>当我在网络上搜寻资料时，不经意间会发现一些看似小众的私人博客或是论坛。尽管里面内容不一定丰富，却有不<br>少文章相当的优秀。亦或是存在着于我来说相当有用的资料。很多文化科上不授予的知识都潜藏于网络中的犄角旮<br>旯之中，或者说网络上的部分博主的文章比课上老师传授的更简单易懂，同时也更有包容性。于是乎，我想借此博<br>客把我认为或许有用的地址分享出来。<strong>只是一些普通的地址而已(≡ω≡)</strong></p>
+<span id="more"></span>
+
+<h3 id="仍有部分站点待更新"><a href="#仍有部分站点待更新" class="headerlink" title="仍有部分站点待更新"></a>仍有部分站点待更新</h3><p><em>在下 不能确保每个网站的可访问性,有些网站可能<strong>更换域名</strong>，或是<strong>关站</strong></em></p>
+<h2 id="工具类URL"><a href="#工具类URL" class="headerlink" title="工具类URL"></a>工具类URL</h2><ul>
+<li>某在线工具大全<a target="_blank" rel="noopener" href="https://www.lddgo.net/index">https://www.lddgo.net/index</a>&gt;</li>
+<li>晨钟网络科技<a target="_blank" rel="noopener" href="https://jamcz.com/">https://jamcz.com/</a></li>
+<li>AI智能图片放大<a target="_blank" rel="noopener" href="https://bigjpg.com/">https://bigjpg.com/</a></li>
+<li>在线转换文件<a target="_blank" rel="noopener" href="https://www.aconvert.com/tw/">https://www.aconvert.com/tw/</a></li>
+<li>Minecraft种子查询工具<a target="_blank" rel="noopener" href="https://www.chunkbase.com/apps/">https://www.chunkbase.com/apps/</a></li>
+<li>TuneMyMusic歌单平台转移<a target="_blank" rel="noopener" href="https://www.tunemymusic.com/zh-cn/#step1">https://www.tunemymusic.com/zh-cn/#step1</a></li>
+<li>One Lib图书下载<a target="_blank" rel="noopener" href="https://1lib.ink/">https://1lib.ink/</a></li>
+<li>sms-activate虚拟号码租赁<a target="_blank" rel="noopener" href="https://sms-activate.org/cn/getNumber">https://sms-activate.org/cn/getNumber</a></li>
+<li>VCB-Studio动画资源下载<a target="_blank" rel="noopener" href="https://vcb-s.com/">https://vcb-s.com/</a></li>
+<li>数字人民币*(破解软件)*<a target="_blank" rel="noopener" href="https://www.itrmb.com/">https://www.itrmb.com/</a></li>
+<li>VOCAKEY愿你唱出心中的歌<a target="_blank" rel="noopener" href="http://vocakey.info/">http://vocakey.info/</a></li>
+<li>Apkpure安卓软件下载<a target="_blank" rel="noopener" href="https://m.apkpure.com/search">https://m.apkpure.com/search</a></li>
+</ul>
+<h2 id="指南与文档类URL"><a href="#指南与文档类URL" class="headerlink" title="指南与文档类URL"></a>指南与文档类URL</h2><ul>
+<li>Web 开放字体格式<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/Guide/WOFF">https://developer.mozilla.org/zh-CN/docs/Web/Guide/WOFF</a></li>
+<li>EJS 嵌入式JS引擎模板<a target="_blank" rel="noopener" href="https://ejs.bootcss.com/">https://ejs.bootcss.com/</a></li>
+<li>Markdown官方文档<a target="_blank" rel="noopener" href="https://markdown.com.cn/basic-syntax/">https://markdown.com.cn/basic-syntax/</a></li>
+</ul>
+<h2 id="教程类URL"><a href="#教程类URL" class="headerlink" title="教程类URL"></a>教程类URL</h2><ul>
+<li>菜鸟教程<a target="_blank" rel="noopener" href="https://www.runoob.com/">https://www.runoob.com</a></li>
+<li>廖雪峰的官方网站<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/">https://www.liaoxuefeng.com/</a></li>
+</ul>
+<h2 id="轻小说类URL"><a href="#轻小说类URL" class="headerlink" title="轻小说类URL"></a>轻小说类URL</h2><p><em>(这不完全是私人的兴趣吗？一点用处没有啊)</em></p>
+<h3 id="日本語web文"><a href="#日本語web文" class="headerlink" title="日本語web文"></a>日本語web文</h3><ul>
+<li>カクヨム<a target="_blank" rel="noopener" href="https://kakuyomu.jp/">https://kakuyomu.jp/</a></li>
+<li>ハーメルン<a target="_blank" rel="noopener" href="https://syosetu.org/">https://syosetu.org/</a></li>
+<li>小説家になろう<a target="_blank" rel="noopener" href="https://syosetu.com/">https://syosetu.com/</a></li>
+</ul>
+<p>####顺便提供三个查词站点<br>    - weblio国語辞典<a target="_blank" rel="noopener" href="https://www.weblio.jp/">https://www.weblio.jp/</a><br>    - コトバンク<a target="_blank" rel="noopener" href="https://kotobank.jp/">https://kotobank.jp/</a><br>    - MOJI辞書<a target="_blank" rel="noopener" href="https://www.mojidict.com/">https://www.mojidict.com/</a></p>
+<h3 id="本地化轻小说"><a href="#本地化轻小说" class="headerlink" title="本地化轻小说"></a>本地化轻小说</h3><p><em>注意！国内汉化组部分处在灰色地带,请遵守规定，请勿擅自传播汉化内容！</em></p>
+<ul>
+<li>轻之国度<a target="_blank" rel="noopener" href="https://www.lightnovel.us/">https://www.lightnovel.us/</a></li>
+<li>真白萌<a target="_blank" rel="noopener" href="https://masiro.me/">https://masiro.me/</a></li>
+</ul>
+<h2 id="漫画类URL"><a href="#漫画类URL" class="headerlink" title="漫画类URL"></a>漫画类URL</h2><p><em>这也是一个充满了版权之争的灰色地带，请遵守规则</em></p>
+<ul>
+<li><del>大妈之家</del>&#x2F;动漫之家<a target="_blank" rel="noopener" href="https://manhua.dmzj.com/">https://manhua.dmzj.com/</a></li>
+<li>Copy漫画<a target="_blank" rel="noopener" href="https://www.copymanga.site/">https://www.copymanga.site/</a><br>稍微提一句，漫画可以使用<a target="_blank" rel="noopener" href="https://tachiyomi.org/">tachiyomi</a>这个软件去观看，这应该是在下所知的最为方便的漫画软件了</li>
+</ul>
+<h2 id="Others-x2F-一些有趣的东西URL"><a href="#Others-x2F-一些有趣的东西URL" class="headerlink" title="Others&#x2F;一些有趣的东西URL"></a>Others&#x2F;一些有趣的东西URL</h2><ul>
+<li><p>MikuTap<a target="_blank" rel="noopener" href="https://aidn.jp/mikutap/">https://aidn.jp/mikutap/</a></p>
+</li>
+<li><p>WEBMV<a target="_blank" rel="noopener" href="https://aidn.jp/webmv/">https://aidn.jp/webmv/</a><br><em>作者<a target="_blank" rel="noopener" href="https://twitter.com/daniwell_aidn">@daniwell_aidn</a>做了些和音乐相关的相当有意思的网站,这是其主页<a target="_blank" rel="noopener" href="https://aidn.jp/">https://aidn.jp/</a></em></p>
+</li>
+<li><p>duyaoss机场测速和简介<a target="_blank" rel="noopener" href="https://www.duyaoss.com/">https://www.duyaoss.com/</a><br><em>是的，机场测速，想必你已经知道这里面有什么了。</em></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://zimoceng.xyz/#/dashboard">zimoceng.xyz</a><br><em>祝愿我的朋友能*<em>安全的</em></em> 良好的 长久的 运营下去。*</p>
+</li>
+</ul>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                    <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 LOEG&#39;s Small house
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;LoSTeGOisT
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+                </div>
+            </transition>
+            
+            <transition name="fade">
+                <div id="preview" ref="preview" v-show="previewShow">
+                    <img id="preview-content" ref="previewContent" />
+                </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+        
+
+
+
+
+        
+    </body>
+</html>

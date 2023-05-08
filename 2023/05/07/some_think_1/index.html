@@ -1,0 +1,253 @@
+
+<!DOCTYPE html>
+<html lang="zh_cn">
+    <head>
+        <meta charset="utf-8" />
+        <title> | LOEG&#39;s コテージ</title>
+        <meta name="author" content="LoSTeGOisT" />
+        <meta name="description" content="LOEG的Blog也说不定" />
+        <meta name="keywords" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <link rel="icon" href="/images/favicon.png" />
+        <script src="https://cdn.staticfile.org/vue/3.2.47/vue.global.prod.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/6.3.0/css/all.min.css" />
+<link rel="stylesheet" href="/css/fonts.min.css" />
+<script> const mixins = {}; </script>
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+
+<script src="https://cdn.staticfile.org/highlight.js/11.7.0/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.staticfile.org/highlight.js/11.7.0/styles/github.min.css"
+/>
+<script src="/js/lib/highlight.js"></script>
+
+
+
+<script src="/js/lib/preview.js"></script>
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/main.css" />
+
+    <meta name="generator" content="Hexo 6.3.0"></head>
+    <body>
+        <div id="layout">
+            <transition name="fade">
+                <div id="loading" v-show="loading">
+                    <div id="loading-circle">
+                        <h2>LOADING</h2>
+                        <p>正在加载，请憩息</p>
+                        <img src="/images/loading.gif" />
+                    </div>
+                </div>
+            </transition>
+            <nav id="menu" :class="{ hidden: hiddenMenu, 'menu-color': menuColor}">
+    <div id="desktop-menu">
+        <a class="title" href="/">
+            <span>LOEG&#39;S コテージ</span>
+        </a>
+        
+        <a href="/">
+            <i class="fa-solid fa-house fa-fw"></i>
+            <span>&ensp;Home</span>
+        </a>
+        
+        <a href="/about">
+            <i class="fa-solid fa-id-card fa-fw"></i>
+            <span>&ensp;About</span>
+        </a>
+        
+        <a href="/archives">
+            <i class="fa-solid fa-box-archive fa-fw"></i>
+            <span>&ensp;Archives</span>
+        </a>
+        
+        <a href="/categories">
+            <i class="fa-solid fa-bookmark fa-fw"></i>
+            <span>&ensp;Categories</span>
+        </a>
+        
+        <a href="/tags">
+            <i class="fa-solid fa-tags fa-fw"></i>
+            <span>&ensp;Tags</span>
+        </a>
+        
+    </div>
+    <div id="mobile-menu">
+        <div class="title" @click="showMenuItems = !showMenuItems">
+            <i class="fa-solid fa-bars fa-fw"></i>
+            <span>&emsp;LOEG&#39;S コテージ</span>
+        </div>
+        <transition name="slide">
+            <div class="items" v-show="showMenuItems">
+                
+                <a href="/">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-house fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Home</div>
+                    </div>
+                </a>
+                
+                <a href="/about">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-id-card fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">About</div>
+                    </div>
+                </a>
+                
+                <a href="/archives">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-box-archive fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Archives</div>
+                    </div>
+                </a>
+                
+                <a href="/categories">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-bookmark fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Categories</div>
+                    </div>
+                </a>
+                
+                <a href="/tags">
+                    <div class="item">
+                        <div style="min-width: 20px; max-width: 50px; width: 10%">
+                            <i class="fa-solid fa-tags fa-fw"></i>
+                        </div>
+                        <div style="min-width: 100px; max-width: 150%; width: 20%">Tags</div>
+                    </div>
+                </a>
+                
+            </div>
+        </transition>
+    </div>
+</nav>
+<transition name="fade">
+    <div id="menu-curtain" @click="showMenuItems = !showMenuItems" v-show="showMenuItems"></div>
+</transition>
+
+            <transition name="into">
+                <div id="main" v-show="!loading">
+                    <div class="article">
+    <div>
+        <h1></h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2023/5/7
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            <span class="tag">
+                
+                <a href="/tags/%E6%80%9D%E7%B5%AE/" style="color: #00bcd4">思絮</a>
+            </span>
+            
+        </span>
+        
+    </div>
+    
+    <div class="content" v-pre>
+        <h1 id="关于社交的一些片面见解"><a href="#关于社交的一些片面见解" class="headerlink" title="关于社交的一些片面见解"></a>关于社交的一些片面见解</h1><p>本人是一个社恐，我常常由于太过在意他人的目光而胡乱猜想，从而导致不敢站在公共场合表达自我，也不敢与陌生人搭话。而一旦与人接触一段时间，我便会渐渐敞开心扉与之交流。因为一定基础的了解会让我对于和人的交往有着一定的把握，从而不必过于担心和算计。而在我这几年的社交活动中，我渐渐明晰我与周围人的一种社交状况…<br><em>或许这只是还只是大学牲的我的粗浅理解</em></p>
+<blockquote>
+<p>浏览全文，我发现我可能偏题了，主要是在聊自己的社交态度，主观性极强。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="我的社交评级系统"><a href="#我的社交评级系统" class="headerlink" title="我的社交评级系统"></a>我的社交评级系统</h2><p>在这几年与周围人的沟通交流中，我发现自己潜意识里有一套判断评价系统。首先我会预先以陌生人为基准向前向后作一条轴，越往前是越与我亲近的人，越往后则越与我疏远的家伙。同时越靠前的人，往往会伴随着“盟友”的tag，而反之则标记着“敌对”。这还只是横轴，纵轴代表的则是重要度。越靠近两头的人越重要，而萍水相逢的陌生人则是最无所谓的那类群体。<br><img src="/images/suc1.webp" alt="社交评级坐标轴" title="抱歉，只是简陋的展示"><br>到此为止，我就会开始将我遇到的人们都分类排序套用到该坐标轴模板中，从而得出结果——我应该如何对待他们的<strong>标准</strong>。也就是对“盟友”慷慨友善，对“敌人”百般刁难。这套系统<strong>并不稳固</strong>，常常会出现一些Bug——当敌人对我做出积极行为，而盟友对我做出消极行为时，我的判断会变得犹豫不决。这个“犹豫不决”会与我另一个准测“应当果断对待事物，迅速准确地做出判断”产生冲突。至此我才渐渐体会到一件事：<em><strong>人是一种十分复杂的生物</strong></em>。单一的行为利益标准并不能简单的将他们划分开来。于是我开始克制自己，努力制止自己单一的评判他人。换种说法，就是提高筛选审查标准，让周围人更难被标记为“盟友”和“敌人”。我得出了一条规则：<em><strong>人终究是孤独的，很难遇到知心的朋友与万恶的敌人</strong></em>。得到这条规则我有些失落，这表明着我几乎不可能卸下防御去和人交流，也不能找到作为靶子的敌人供我发泄情绪。同时也警示着我应该更加理性地对待他人。</p>
+<h2 id="我的待人处世简析"><a href="#我的待人处世简析" class="headerlink" title="我的待人处世简析"></a>我的待人处世简析</h2><blockquote>
+<p>待人处世这点因人而异，而我作为一个社恐，实在是只能处处妥协以求不引来更多的麻烦。  </p>
+</blockquote>
+<h4 id="友善与从众"><a href="#友善与从众" class="headerlink" title="友善与从众"></a>友善与从众</h4><p>在面对陌生人亦或是非“敌对”的群体时，我总是尽量保持友善的一面。常常答应着周围人一些无所谓的琐事。在面对一些可能令我反感的人时，我一般也会答应其请求。当然以上这些所谓“请求”都是对我来说并不重要且力所能及的小事。帮助他人能给我带来一定程度的成就感，同时也能让我体会到自己所谓的“价值”<em>（<del>这算是满足所谓“承认欲求”吗？(笑)</del>）</em> 。在面对一些无关紧要的问题时我更偏向于选择大家都认同的那个选项，也就是所谓“从众”。究其原因，由于我偏内向的性格，我不怎么敢去作出和大众相悖的选择。引人注目对于我来说负担太大了。</p>
+<h4 id="隐忍与保守"><a href="#隐忍与保守" class="headerlink" title="隐忍与保守"></a>隐忍与保守</h4><p>我总觉得自己很好应付，对于不满的事情常常选择隐忍。一方面尖锐地表达不满会造成整体氛围的消极与尴尬，一方面我怀疑我所抱怨的人对我来说仍有价值。这两个方面导致我仿佛被锁链绞首一般，无法表达出真实的情绪。而当我处在私人环境中，面对于我来说已然毫无价值的人，我多半会果断拒绝。有些时候，我也会突然情绪失控一般说出些伤人的话，我通常会后知后觉的为此感到惋惜和后悔，亦或是逞强地坚持自己没错。我总是下意识的反思自己是不是说错了话，伤害了谁。</p>
+<h4 id="傲慢与极端"><a href="#傲慢与极端" class="headerlink" title="傲慢与极端"></a>傲慢与极端</h4><p>我很清楚，自己并非什么友善的人。可以说我对外的态度多半都是利益相关，对我有潜在价值的人我会选择好好对待，对我没有什么价值的人我多半是选择忽略，我并不在乎他们，无论生死。而对我有危害的人，我绝对给不出什么好脸色。当我反思自己的言行的时候，我也会不经意想到“既然我反思了自己的言行，那我是否比那些从不反思自己的人高人一等？”从而产生一股优越感。这便是我的傲慢，对于周围人不屑的傲慢。或许正是这种傲慢支撑着我目前的状态，让我不至于陷入自卑的漩涡。而极端便是我在网络社会上接受片面信息导致的不良倾向。我变得不太能接受不同的意见，同时在面对一些问题时会变得目光狭隘，而产生错误且偏激的言行。</p>
+<h4 id="简析与总结"><a href="#简析与总结" class="headerlink" title="简析与总结"></a>简析与总结</h4><p>对于以上三部分的内容，可以看出是由外到内的脉络，所谓“友善”不过是外在的一种阿谀奉承，而“傲慢”才是我待人的真实态度。我以自己为案例加深了对上文一件事的理解：<strong>人是一种十分复杂的生物</strong>。也就是不止我一个人如此虚伪，我身边的人们也都很虚伪。<strong>整个社会都被虚伪的人际关系层层“加密”</strong>。这使得我们不能以片面之词来理解人们之间的联系，与人的交往之中需要留意交流氛围，说话人的神态，谈吐间的选词等等。或许也正是因为我所得出的结论，而导致我变得过分在意他人的目光吧。于社会常识来说我所得出的结论恐怕是错误愚蠢且肤浅的吧，但这由我的所见所闻所构成的观念暂时无法被推翻。<del>消极的观念似乎能维持更长时间</del>。</p>
+<h2 id="关于旁观者视角"><a href="#关于旁观者视角" class="headerlink" title="关于旁观者视角"></a>关于旁观者视角</h2><p>在初高中时期，短暂的课余时间之中，我常常一个人坐在座位上悄然关注着同班同学们的社交活动。非常有意思，<br>像是观赏纪录片一样。我常常能在观察同学们的互动之中收获到不少经验。因为旁观能发现更多的细节之处，例如他们在交谈时各自的神态，语气，情绪，从他们的举手投足之间我可以总结并对他们进行主观的评级。<br>同时也能更加了解他们之间的关系网络与每个同学的性格差异之处，从而在面对社交问题的时候更有余裕。能更圆滑地处理与同学之间的关系。  </p>
+<p>但是这也造成一种问题，那就是<strong>过分信赖于旁观所带给我的间接经验</strong>，使我不敢自己去实践社交活动，<br>因为我害怕社交所带来的风险——也就是受到拒绝。因为我比较在意他人的目光，如果遭受拒绝，我会相当受打击。<br>而抵触有风险的社交则反向加剧了我的“社恐程度”，在这种相互作用下，我愈发沉浸于旁观者视角中，而常常将旁观得到的结论当作自己“实践”的结论。导致我对于社交活动的认知产生了一定的偏差。</p>
+<p>而上述造成的问题，到了大学便更加展现出其劣势。在现实中，除了天天面对的室友，我的对外社交几乎为0。<br>这让我的视野变得稍显狭隘，让御宅属性的我变得更具有极端倾向（我对此相当有自觉，但我实在懒得出去参加户外活动。）和消极心理。</p>
+<p>总结一下结论就是：<strong>旁观者视角或许更清晰，但是更应该自己主动参与社交活动，这样能获得更加直接的体会，同时心态也会更加开阔。</strong></p>
+<h2 id="户外社交活动的优势"><a href="#户外社交活动的优势" class="headerlink" title="户外社交活动的优势"></a>户外社交活动的优势</h2><p>拜我家族亲戚所赐，我常常有机会能跟随他们出去玩。像是出去爬山，或是去某个小景点观光。每当感受大自然，观赏到怡人的风景时，<br>我都会感到心情舒适，我不知该如何形容，就好像是片刻的憩息一样。我不用去思考关于社会，关于生活，只需要站在山头，站在风中，<br>感叹着自然神奇的魅力即可。不需要去理解，仅仅感受着周围的一切。</p>
+<p>其次，外出游玩时，会有不少的时间是在旅途中的。坐在车上，看着窗外的景象，这段时光对我来说格外宁静。带着耳机听着歌，<br>我便会开始思考，思考着生活，政治，人际，哲学，世界与我。因为在路途上几乎没有外界的干扰，我可以好好的整理思绪去思考。<br>随着思考的深入我可能会得出些新的结论，从而修正我的观念，改变我的行为准则。<em>而这段时光，便是我与自我的社交过程。</em></p>
+<p>总结一下有两点:<strong>1. 户外社交活动能在一定程度上放松自我	2. 户外社交活动的途中能集中注意力去思考</strong></p>
+<h2 id="对于社交的主观思考"><a href="#对于社交的主观思考" class="headerlink" title="对于社交的主观思考"></a>对于社交的主观思考</h2><p>对待不同的人使用不同的态度，应当是一种正常且良好的社交习惯。我们不可能对每个人一视同仁，每个人都有不同的性格和价值。<br>对不同的人使用双重标准无可厚非，这样既符合人的本性，也能间接体现出不同人的优劣势。举个例子：你总得让你所喜欢的人知道自己是被你喜欢的吧。<br><strong>让他人能稍稍感知到你的想法能便于其与你相处</strong>，而不让事态一直处于一种无声的尴尬之中。</p>
+<p>保持“可能有人讨厌我”的观念并坦然接受，我们在社交之中常常会有意无意地冒犯到他人，这种状况难以避免。<br>虽然他人可能不会明显地表露出“讨厌”的情绪，但是在社交中留意他人的态度并注意言行选词可以稍稍降低被讨厌的可能性。<br>我并非不支持“直言不讳地准确表达想法”这种观念，而这是要分场合的，在严谨的探讨场合中显然准确的表达自己的思考更加重要，<br>在此之上我们或许应该避免与他人产生较大的冲突。<strong>尤其警惕情绪冲突</strong>。</p>
+<p>价值是社交的筹码，展现出自己的价值显然是很重要的。同时表明他人对于自己的价值也是很重要的。<br>我的意思是：<strong>增加相互间的交流，了解对方，也了解对方眼中的自己，能使得相互间的关系容易处理</strong>。<br>而不是像轻小说里一样不断的误会，导致关系尴尬。（显然我自己并没有处理好，我不善于敞开真心与人交流，导致我常常会陷入尴尬的人际关系）</p>
+<hr>
+<p>以上只是我的浅显的一些思考，我不能判断其的正确性，我只是靠着自己尚且短暂的所见所闻而得出的结论并做出抉择。希望能带给观众一些启发。<br>或许我该多阅读些书吧，积累更多的见闻，并不断修正自己的观念。  </p>
+<blockquote>
+<p>我最近在质疑自己是否真的知道何为独立思考。究竟怎样才能变得所谓“成熟”。</p>
+</blockquote>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
+</div>
+
+                    <footer id="footer">
+    <div id="footer-wrap">
+        <div>
+            &copy;
+            2023 - 2023 LOEG&#39;s コテージ
+            <span id="footer-icon">
+                <i class="fa-solid fa-font-awesome fa-fw"></i>
+            </span>
+            &commat;LoSTeGOisT
+        </div>
+        <div>
+            Based on the <a target="_blank" rel="noopener" href="https://hexo.io">Hexo Engine</a> &amp;
+            <a target="_blank" rel="noopener" href="https://github.com/argvchs/hexo-theme-particlex">ParticleX Theme</a>
+        </div>
+        
+    </div>
+</footer>
+
+                </div>
+            </transition>
+            
+            <transition name="fade">
+                <div id="preview" ref="preview" v-show="previewShow">
+                    <img id="preview-content" ref="previewContent" />
+                </div>
+            </transition>
+            
+        </div>
+        <script src="/js/main.js"></script>
+        
+        
+
+
+
+
+        
+    </body>
+</html>

@@ -6,7 +6,7 @@ body {
 #mu {
     z-index: 999;
     height: 80px;
-    background-color: #0ff;
+    background-color: #66afef;
     width: 100%;
     position: fixed;
     top: 0px;
@@ -19,9 +19,9 @@ body {
 }
 
 #mu button {
-    background-color:#0ff;
+    background-color:#66afef;
     font-size:20px;
-    padding:27px;
+    height: 80px;
     border:none;
     color:navy;
     position:relative;
@@ -29,7 +29,7 @@ body {
 }
 
 #mu button:hover {
-    background-color:#00cece;
+    background-color:#4b7fae;
 }
 
 #naio {
@@ -41,4 +41,40 @@ body {
     background-size: cover;
     height: 100vh;
     z-index: -1;
+}
+
+#yuan {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #66afef;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #66afef;
+    border-radius: 50%;
+    animation-fill-mode: forwards; /*动画播放完保持最后一帧*/
+}
+
+#yuan:hover {
+    animation-name: fd;
+    animation-duration: 1s;/*动画完成时间1秒*/
+    animation-timing-function: cubic-bezier(1,0,0,1);/*贝塞尔曲线运动*/
+    animation-iteration-count: 1;/*动画播放一次*/
+   
+}
+
+#yuan::after {
+    animation-fill-mode:forwards; /*动画播放完保持最后一帧*/    
+}
+
+
+@keyframes fd {
+
+    100% {
+        transform: scale(11);/*100%时尺寸放大为原来的倍数*/
+        
+    }
 }
